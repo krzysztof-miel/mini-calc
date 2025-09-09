@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-calc"
+version = "0.1.0"
+description = "Instruktażowy mini-projekt w Pythonie z pytest i prostym CLI."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Krzysztof", email = "example@example.com"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[project.scripts]
+mini-calc = "mini_calc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
