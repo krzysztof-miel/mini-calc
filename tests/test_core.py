@@ -7,6 +7,7 @@ from mini_calc import add, sub, mean, is_prime
     (1, 2, 3),
     (-5, 5, 0),
     (2.5, 0.5, 3.0),
+    (5.5, 0.5, 6.0),
 ])
 def test_add(a, b, expected):
     assert add(a, b) == pytest.approx(expected)
